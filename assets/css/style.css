@@ -127,7 +127,8 @@ header {
   margin: 35px 2%;
 }
 
-header .wrapper {
+header > .wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -220,7 +221,7 @@ header .wrapper {
 .blog-dropdown-content a {
   padding: 12px 10px;
   display: block;
-  float: none;
+ /* float: none;*/
   color: black;
   text-align: left;
   text-decoration: none;
@@ -269,7 +270,7 @@ header .wrapper {
 /*=================================
   main styling starts here
 =================================*/
-.banner .wrapper {
+.banner > .wrapper {
   height: 785px;
   display: flex;
   z-index: -1;
