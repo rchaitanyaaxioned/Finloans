@@ -545,19 +545,19 @@ header>.wrapper {
 
 /*styling for offer section start here*/
 .offer-content {
-  margin: 240px 0;
+  margin: 140px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #666;
 }
 
 .offer .wrapper h3 {
   width: 40%;
+  padding: 20px 0;
+  border-top: 2px solid #34D4D6;
   font-size: 45px;
   text-align: center;
-  border-top: 2px solid #34D4D6;
 }
 
 .offer .wrapper h3::first-letter {
@@ -565,23 +565,24 @@ header>.wrapper {
 }
 
 .offer-span {
-  font-size: 17px;
-  color: #98A0AD;
   margin: 15px 0;
+  color: #98A0AD;
+  font-size: 17px; 
 }
 
 .loan-card-list {
+  margin: 60px 10%;
   display: flex;
-  margin: 60px 0;
+  flex-basis: 30%;
 }
 
 .loan-card {
   width: 50%;
-  height: 585px;
+  height: 480px;
   margin: 0 1%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   background-image: linear-gradient(#098BFD, #054781);
   border-radius: 5px;
 }
@@ -589,12 +590,48 @@ header>.wrapper {
 .loan-card figure {
   width: 70PX;
   height: 70PX;
-  margin: 50px 0;
+  margin: 35px 0;
 }
 
 .loan-card h4 {
-  font-size: 15px;
   color: #FFF;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.loan-card-span {
+  margin: 20px 0;
+}
+
+.loan-card-span span {
+  color: #34D4D6;
+  font-size: 25px;
+}
+
+.loan-rate-list {
+  margin: 10px 12%;
+  color: #FFF;
+  font-size: 15px;
+}
+
+.loan-rate-list li {
+  margin: 5px 4%;
+  list-style-type: disc;
+}
+
+.offer-apply-now-btn {
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.offer-apply-now-btn a {
+  padding: 10px 25%;
+  background-color: #34D4D6;
+  border: 1px solid #34D4D6;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 15px;
   text-transform: capitalize;
 }
 
