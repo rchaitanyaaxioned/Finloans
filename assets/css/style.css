@@ -266,6 +266,12 @@ header>.wrapper {
   left: 3%;
 }
 
+/*styling for hamburger start here*/
+.hamburger,.bar {
+  display: none;
+}
+/*styling for hamburger end here*/
+
 /*styling for nav bar start here*/
 .nav-list {
   display: flex;
@@ -1204,7 +1210,7 @@ header>.wrapper {
 =================================*/
 
 /*media query starts*/
-/*media query for 995px starts here*/
+/*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
 
   /*hover effect for nav bar start here*/
@@ -1346,3 +1352,100 @@ header>.wrapper {
 
   /*hover effect for footer end here*/
 }
+/*media query for 1024px end here*/
+
+/*media query for 767px starts here*/
+@media only screen and (max-width: 767px) {
+  /*styling for hamburger start here*/
+  .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    display: block;
+    background-color: #FFF;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger {
+    margin-left: auto;
+    margin-right: 5%;
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top:90px;
+    right: 0px;
+    background-color: #098CFF;
+  }
+
+  .nav-list {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-list li {
+    padding-bottom: 15px;
+    border-right: none;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 30px;
+  }
+  
+  .nav-list li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .hamburger:hover+nav {
+    display: block;
+  }
+  /*styling for hamburger end here*/
+
+  /*styling for banner form start here*/
+  .banner-form h4 {
+    margin-top: 40px;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+
+  .bf-span {
+    padding: 0 17%;
+    margin-top: 30px;
+    color: #98A0AD;
+    font-size: 12px;
+  }
+  /*styling for banner form end here*/
+
+  /*styling for why schoose us start here*/
+  .cu-side-div h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+
+.cu-side-div p {
+  width: 100%;
+  font-size: 15px;
+  color: #98A0AD;
+}
+
+.cu-advantage-list {
+  margin: 10px 0;
+}
+
+.cu-advantage-list li {
+  display: block;
+  line-height: 20px;
+}
+/*styling for why schoose us end here*/
+
+}
+/*media query for 767px end here*/
