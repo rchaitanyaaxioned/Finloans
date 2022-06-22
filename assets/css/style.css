@@ -996,7 +996,60 @@ header>.wrapper {
 }
 
 .ft-social-link-list {
+  margin-top: 40px;
   display: flex;
+}
+
+.ft-social-link-list li a {
+  color: #FFF;
+}
+
+.fb-icon a::after {
+  padding: 12px;
+  margin: 10px 2%;
+  border: 1px solid #98A0AD;
+  border-radius: 25px;
+  content: "\f39e";
+  color: #98A0AD;
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+.gp-icon a::after {
+  padding: 12px;
+  margin: 10px 2%;
+  border: 1px solid #98A0AD;
+  border-radius: 25px;
+  content: "\f0d5";
+  color: #98A0AD;
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+.tw-icon a::after {
+  padding: 12px;
+  margin: 10px 2%;
+  border: 1px solid #98A0AD;
+  border-radius: 25px;
+  content: "\f099";
+  color: #98A0AD;
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+.in-icon a::after {
+  padding: 12px;
+  margin: 10px 2%;
+  border: 1px solid #98A0AD;
+  border-radius: 25px;
+  content: "\f16d";
+  color: #98A0AD;
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
 }
 /*styling for footer fit loan section end here*/
 
@@ -1242,6 +1295,11 @@ header>.wrapper {
   .ft-phone-no a:hover {
     color: #098CFF;
     text-decoration: underline;
+  }
+
+  .ft-social-link-list li a:hover::after {
+    color: #098CFF;
+    border: 1px solid #098CFF;
   }
 
   .ft-services-list li a:hover {
