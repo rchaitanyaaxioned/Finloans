@@ -615,7 +615,8 @@ header>.wrapper {
 }
 
 .loan-rate-list li {
-  margin: 5px 4%;
+  margin: 5px 2%;
+  display: list-item;
   list-style-type: disc;
 }
 
@@ -634,8 +635,74 @@ header>.wrapper {
   font-size: 15px;
   text-transform: capitalize;
 }
-
 /*styling for offer section end here*/
+
+/*styling for why choose us section start here*/
+.choose-us {
+  margin: 130px 0;
+}
+
+.cu-div {
+  margin: 0 1%;
+  display: flex;
+}
+
+.cu-girl-img, .cu-side-div {
+  width: 50%;
+  padding: 15px;
+}
+
+.cu-girl-img img {
+  max-width: 470px;
+  max-height: 510px;
+  padding: 0;
+}
+
+.cu-side-div h3 {
+  margin-top: 75px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.cu-side-div p {
+  width: 70%;
+  margin: 10px 0;
+  font-size: 15px;
+  color: #98A0AD;
+}
+
+.cu-advantage-list {
+  margin: 30px 0;
+}
+
+.cu-advantage-list li {
+  display: block;
+  line-height: 30px;
+}
+
+.cu-advantage-list li::before {
+  padding-right: 2%;
+  color: #098CFF;
+  content: "\e122";
+  font-family: "Font Awesome 5 Free ";
+  text-indent: 0;
+}
+
+.cu-advantage-list li::first-letter {
+  text-transform: capitalize;
+}
+
+.cu-about-us-btn a {
+  padding: 10px 4%;
+  background-color: #34D4D6;
+  border: 1px solid #34D4D6;
+  border-radius: 5px;
+  color:#FFF;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+/*styling for why choose us section end here*/
 
 
 
@@ -669,7 +736,6 @@ header>.wrapper {
     padding-bottom: 5px;
     border-bottom: 1px solid #34D4D6;
   }
-
   /*hover effect for nav bar start here*/
 
   /*hover effect for pages nav tab start here*/
@@ -686,7 +752,6 @@ header>.wrapper {
   .pages-dropdown:hover .pages-dropdown-content {
     display: block;
   }
-
   /*hover effect for pages nav tab end here*/
 
   /*hover effect for blog nav tab start here*/
@@ -703,7 +768,6 @@ header>.wrapper {
   .blog-dropdown:hover .blog-dropdown-content {
     display: block;
   }
-
   /*hover effect for blog nav tab end here*/
 
   /*hover effect for phone number start here*/
@@ -711,7 +775,6 @@ header>.wrapper {
     border-bottom: 1px solid #34D4D6;
     color: #34D4D6;
   }
-
   /*hover effect for phone number end here*/
 
   /*hover effect for apply for loan start here*/
@@ -719,7 +782,6 @@ header>.wrapper {
     background-color: #34D4D6;
     color: #FFF;
   }
-
   /*hover effect for apply for loan start here*/
 
   /*hover effect for how it works btn start here*/
@@ -727,8 +789,8 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
-
   /*hover effect for how it works btn end here*/
+
   /*hover effect for banner form start here*/
   .input-amount select:hover {
     border: 1px solid #34D4D6;
@@ -744,6 +806,12 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
-
   /*hover effect for banner form end here*/
+
+  /*hover effect for about us btn in choose us start here*/
+  .cu-about-us-btn a:hover {
+    background-color: #FFF;
+    color: #34D4D6;
+  }
+  /*hover effect for about us btn in choose us end here*/
 }
