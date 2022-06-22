@@ -900,6 +900,48 @@ header>.wrapper {
 }
 /*styling for clients section end here*/
 
+/*styling for apply for loan section start here*/
+.apply-for-loan {
+  margin: 130px 0;
+}
+
+.afl-bg-img {
+  padding: 155px 0;
+  margin: 130px 0;
+  background-image: url(/assets/Images/finloans-afl.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.afl-heading {
+  flex-basis: 40%;
+  font-size: 30px;
+  color: #FFF;
+}
+
+.afl-heading::first-letter {
+  text-transform: capitalize;
+}
+
+.afl-apply-now-btn {
+  padding-left: 33%;
+  flex-basis: 10%;
+}
+
+.afl-apply-now-btn a {
+  padding: 10px 15%;
+  background-color: #34D4D6;
+  border: 1px solid #34D4D6;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+/*styling for apply for loan section end here*/
 /*=================================
   main styling ends here
 =================================*/
@@ -1006,4 +1048,11 @@ header>.wrapper {
     color: #34D4D6;
   }
   /*hover effect for about us btn in choose us end here*/
+
+  /*hover effect for apply btn start here*/
+  .afl-apply-now-btn a:hover {
+    background-color: #FFF;
+    color: #34D4D6;
+  }
+  /*hover effect for apply btn end here*/
 }
