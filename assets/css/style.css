@@ -822,7 +822,6 @@ header>.wrapper {
   width: 100%;
   margin: 125px 0;
   display: flex;
-  background-color: #666;
 }
 
 .test-li-1 {
@@ -830,14 +829,12 @@ header>.wrapper {
   height: 200px;
   padding-left: 10%;
   display: flex;
-  background-color: #34D4D6;
 }
 
 .test-li-2 {
   width: 20%;
   height: 200px;
   padding-right: 10%;
-  background-color: #098BFD;
 }
 
 .test-li-1 figure {
@@ -865,18 +862,39 @@ header>.wrapper {
 }
 
 .test-li-2 div {
-  margin: 55px 0;
+  margin: 40px 0;
   text-align: center;
 }
 
 .test-li-2 a {
-  color: #000;
+  color: #FFF;
+  font-size: 30px;
 }
 
-.test-li-2::after {
-  
+.next-btn::after {
+  padding: 50%;
+  border-radius: 40px;
+  background-color: #E6F3FF;
+  color: #098CFF;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free ";
+  text-indent: 0;
+}
+
+.prev-btn::after {
+  padding: 50%;
+  border-radius: 40px;
+  background-color: #E6F3FF;
+  color: #098CFF;
+  content: "\f104";
+  font-family: "Font Awesome 5 Free ";
+  text-indent: 0;
 }
 /*styling for testimonian section end here*/
+
+/*styling for clients section start here*/
+
+/*styling for clients section end here*/
 
 /*=================================
   main styling ends here
