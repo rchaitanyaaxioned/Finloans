@@ -567,7 +567,7 @@ header>.wrapper {
 .offer-span {
   margin: 15px 0;
   color: #98A0AD;
-  font-size: 17px; 
+  font-size: 17px;
 }
 
 .loan-card-list {
@@ -635,6 +635,7 @@ header>.wrapper {
   font-size: 15px;
   text-transform: capitalize;
 }
+
 /*styling for offer section end here*/
 
 /*styling for why choose us section start here*/
@@ -647,7 +648,8 @@ header>.wrapper {
   display: flex;
 }
 
-.cu-girl-img, .cu-side-div {
+.cu-girl-img,
+.cu-side-div {
   width: 50%;
   padding: 15px;
 }
@@ -698,10 +700,11 @@ header>.wrapper {
   background-color: #34D4D6;
   border: 1px solid #34D4D6;
   border-radius: 5px;
-  color:#FFF;
+  color: #FFF;
   font-size: 15px;
   text-transform: capitalize;
 }
+
 /*styling for why choose us section end here*/
 
 /*styling for how it works section start here*/
@@ -764,6 +767,7 @@ header>.wrapper {
   font-size: 15px;
   color: #98A0AD;
 }
+
 /*styling for how it works section end here*/
 
 /*styling for frequently ask section start here*/
@@ -771,7 +775,8 @@ header>.wrapper {
   display: flex;
 }
 
-.fa-man-image, .fa-side-div {
+.fa-man-image,
+.fa-side-div {
   width: 50%;
 }
 
@@ -815,6 +820,7 @@ header>.wrapper {
 .fa-hide-para {
   display: none;
 }
+
 /*styling for frequently ask section end here*/
 
 /*styling for testimonian section start here*/
@@ -890,14 +896,16 @@ header>.wrapper {
   font-family: "Font Awesome 5 Free ";
   text-indent: 0;
 }
+
 /*styling for testimonian section end here*/
 
 /*styling for clients section start here*/
 .clients-list {
   margin: 0 12%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
+
 /*styling for clients section end here*/
 
 /*styling for apply for loan section start here*/
@@ -941,6 +949,7 @@ header>.wrapper {
   font-size: 15px;
   text-transform: capitalize;
 }
+
 /*styling for apply for loan section end here*/
 /*=================================
   main styling ends here
@@ -996,8 +1005,62 @@ header>.wrapper {
 }
 
 .ft-social-link-list {
+  margin-top: 40px;
   display: flex;
 }
+
+.ft-social-link-list li a {
+  color: #FFF;
+}
+
+.fb-icon a::after {
+  padding: 12px;
+  margin: 10px 2%;
+  border: 1px solid #98A0AD;
+  border-radius: 25px;
+  content: "\f39e";
+  color: #98A0AD;
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+.gp-icon a::after {
+  padding: 12px;
+  margin: 10px 2%;
+  border: 1px solid #98A0AD;
+  border-radius: 25px;
+  content: "\f0d5";
+  color: #98A0AD;
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+.tw-icon a::after {
+  padding: 12px;
+  margin: 10px 2%;
+  border: 1px solid #98A0AD;
+  border-radius: 25px;
+  content: "\f099";
+  color: #98A0AD;
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+.in-icon a::after {
+  padding: 12px;
+  margin: 10px 2%;
+  border: 1px solid #98A0AD;
+  border-radius: 25px;
+  content: "\f16d";
+  color: #98A0AD;
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
 /*styling for footer fit loan section end here*/
 
 /*styling for footer services start here*/
@@ -1026,6 +1089,7 @@ header>.wrapper {
   font-size: 13px;
   text-transform: capitalize;
 }
+
 /*styling for footer services start here*/
 
 /*styling for footer usefull links start here*/
@@ -1054,6 +1118,7 @@ header>.wrapper {
   font-size: 13px;
   text-transform: capitalize;
 }
+
 /*styling for footer usefull links start here*/
 
 /*styling for footer subscribe start here*/
@@ -1100,6 +1165,7 @@ header>.wrapper {
   color: #98A0AD;
   font-size: 15px;
 }
+
 /*styling for footer subscribe start here*/
 /*styling for footer-top end here*/
 
@@ -1110,12 +1176,12 @@ header>.wrapper {
 }
 
 .fb-span {
-  color:#98A0AD;
+  color: #98A0AD;
   font-size: 15px;
   text-align: center;
 }
 
-.fb-span > span::first-letter {
+.fb-span>span::first-letter {
   text-transform: capitalize;
 }
 
@@ -1147,6 +1213,7 @@ header>.wrapper {
     padding-bottom: 5px;
     border-bottom: 1px solid #34D4D6;
   }
+
   /*hover effect for nav bar start here*/
 
   /*hover effect for pages nav tab start here*/
@@ -1163,6 +1230,7 @@ header>.wrapper {
   .pages-dropdown:hover .pages-dropdown-content {
     display: block;
   }
+
   /*hover effect for pages nav tab end here*/
 
   /*hover effect for blog nav tab start here*/
@@ -1179,6 +1247,7 @@ header>.wrapper {
   .blog-dropdown:hover .blog-dropdown-content {
     display: block;
   }
+
   /*hover effect for blog nav tab end here*/
 
   /*hover effect for phone number start here*/
@@ -1186,6 +1255,7 @@ header>.wrapper {
     border-bottom: 1px solid #34D4D6;
     color: #34D4D6;
   }
+
   /*hover effect for phone number end here*/
 
   /*hover effect for apply for loan start here*/
@@ -1193,6 +1263,7 @@ header>.wrapper {
     background-color: #34D4D6;
     color: #FFF;
   }
+
   /*hover effect for apply for loan start here*/
 
   /*hover effect for how it works btn start here*/
@@ -1200,6 +1271,7 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
+
   /*hover effect for how it works btn end here*/
 
   /*hover effect for banner form start here*/
@@ -1217,6 +1289,7 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
+
   /*hover effect for banner form end here*/
 
   /*hover effect for about us btn in choose us start here*/
@@ -1224,6 +1297,7 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
+
   /*hover effect for about us btn in choose us end here*/
 
   /*hover effect for apply btn start here*/
@@ -1231,6 +1305,7 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
+
   /*hover effect for apply btn end here*/
 
   /*hover effect for footer start here*/
@@ -1242,6 +1317,11 @@ header>.wrapper {
   .ft-phone-no a:hover {
     color: #098CFF;
     text-decoration: underline;
+  }
+
+  .ft-social-link-list li a:hover::after {
+    color: #098CFF;
+    border: 1px solid #098CFF;
   }
 
   .ft-services-list li a:hover {
@@ -1263,5 +1343,6 @@ header>.wrapper {
     color: #098BFD;
     text-decoration: underline;
   }
+
   /*hover effect for footer end here*/
 }
