@@ -893,7 +893,11 @@ header>.wrapper {
 /*styling for testimonian section end here*/
 
 /*styling for clients section start here*/
-
+.clients-list {
+  margin: 0 12%;
+  display: flex;
+  justify-content:space-between;
+}
 /*styling for clients section end here*/
 
 /*=================================
