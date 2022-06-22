@@ -704,7 +704,67 @@ header>.wrapper {
 }
 /*styling for why choose us section end here*/
 
+/*styling for how it works section start here*/
+.how-it-works .wrapper {
+  background-color: #F5FBFF;
+}
 
+.hiw-div {
+  padding: 140px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiw-div h3 {
+  width: 20%;
+  padding: 15px 0;
+  border-top: 2px solid #34D4D6;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hiw-span {
+  margin: 10px 0;
+  color: #98A0AD;
+  font-size: 17px;
+}
+
+.hiw-list {
+  padding: 0 10%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hiw-list-span {
+  margin: 40px 0;
+}
+
+.hiw-list-span span {
+  padding: 25px;
+  background-color: #DDF0FF;
+  border-radius: 40px;
+  color: #098CFF;
+}
+
+.hiw-list h4 {
+  font-size: 20px;
+}
+
+.hiw-list h4::first-letter {
+  text-transform: capitalize;
+}
+
+.hiw-list p {
+  width: 85%;
+  margin: 15px 0;
+  font-size: 15px;
+  color: #98A0AD;
+}
+/*styling for how it works section end here*/
 
 
 
