@@ -575,8 +575,27 @@ header>.wrapper {
   margin: 60px 0;
 }
 
-.loan-card-list li {
+.loan-card {
+  width: 50%;
+  height: 585px;
   margin: 0 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#098BFD, #054781);
+  border-radius: 5px;
+}
+
+.loan-card figure {
+  width: 70PX;
+  height: 70PX;
+  margin: 50px 0;
+}
+
+.loan-card h4 {
+  font-size: 15px;
+  color: #FFF;
+  text-transform: capitalize;
 }
 
 /*styling for offer section end here*/
