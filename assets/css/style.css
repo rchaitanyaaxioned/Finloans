@@ -266,6 +266,14 @@ header>.wrapper {
   left: 3%;
 }
 
+/*styling for hamburger start here*/
+.hamburger,
+.bar {
+  display: none;
+}
+
+/*styling for hamburger end here*/
+
 /*styling for nav bar start here*/
 .nav-list {
   display: flex;
@@ -567,7 +575,7 @@ header>.wrapper {
 .offer-span {
   margin: 15px 0;
   color: #98A0AD;
-  font-size: 17px; 
+  font-size: 17px;
 }
 
 .loan-card-list {
@@ -635,6 +643,7 @@ header>.wrapper {
   font-size: 15px;
   text-transform: capitalize;
 }
+
 /*styling for offer section end here*/
 
 /*styling for why choose us section start here*/
@@ -647,7 +656,8 @@ header>.wrapper {
   display: flex;
 }
 
-.cu-girl-img, .cu-side-div {
+.cu-girl-img,
+.cu-side-div {
   width: 50%;
   padding: 15px;
 }
@@ -698,10 +708,11 @@ header>.wrapper {
   background-color: #34D4D6;
   border: 1px solid #34D4D6;
   border-radius: 5px;
-  color:#FFF;
+  color: #FFF;
   font-size: 15px;
   text-transform: capitalize;
 }
+
 /*styling for why choose us section end here*/
 
 /*styling for how it works section start here*/
@@ -764,6 +775,7 @@ header>.wrapper {
   font-size: 15px;
   color: #98A0AD;
 }
+
 /*styling for how it works section end here*/
 
 /*styling for frequently ask section start here*/
@@ -771,7 +783,8 @@ header>.wrapper {
   display: flex;
 }
 
-.fa-man-image, .fa-side-div {
+.fa-man-image,
+.fa-side-div {
   width: 50%;
 }
 
@@ -815,6 +828,7 @@ header>.wrapper {
 .fa-hide-para {
   display: none;
 }
+
 /*styling for frequently ask section end here*/
 
 /*styling for testimonian section start here*/
@@ -890,14 +904,16 @@ header>.wrapper {
   font-family: "Font Awesome 5 Free ";
   text-indent: 0;
 }
+
 /*styling for testimonian section end here*/
 
 /*styling for clients section start here*/
 .clients-list {
   margin: 0 12%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
+
 /*styling for clients section end here*/
 
 /*styling for apply for loan section start here*/
@@ -941,6 +957,7 @@ header>.wrapper {
   font-size: 15px;
   text-transform: capitalize;
 }
+
 /*styling for apply for loan section end here*/
 /*=================================
   main styling ends here
@@ -1051,6 +1068,7 @@ header>.wrapper {
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
+
 /*styling for footer fit loan section end here*/
 
 /*styling for footer services start here*/
@@ -1079,6 +1097,7 @@ header>.wrapper {
   font-size: 13px;
   text-transform: capitalize;
 }
+
 /*styling for footer services start here*/
 
 /*styling for footer usefull links start here*/
@@ -1107,6 +1126,7 @@ header>.wrapper {
   font-size: 13px;
   text-transform: capitalize;
 }
+
 /*styling for footer usefull links start here*/
 
 /*styling for footer subscribe start here*/
@@ -1153,6 +1173,7 @@ header>.wrapper {
   color: #98A0AD;
   font-size: 15px;
 }
+
 /*styling for footer subscribe start here*/
 /*styling for footer-top end here*/
 
@@ -1163,12 +1184,12 @@ header>.wrapper {
 }
 
 .fb-span {
-  color:#98A0AD;
+  color: #98A0AD;
   font-size: 15px;
   text-align: center;
 }
 
-.fb-span > span::first-letter {
+.fb-span>span::first-letter {
   text-transform: capitalize;
 }
 
@@ -1191,7 +1212,7 @@ header>.wrapper {
 =================================*/
 
 /*media query starts*/
-/*media query for 995px starts here*/
+/*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
 
   /*hover effect for nav bar start here*/
@@ -1200,6 +1221,7 @@ header>.wrapper {
     padding-bottom: 5px;
     border-bottom: 1px solid #34D4D6;
   }
+
   /*hover effect for nav bar start here*/
 
   /*hover effect for pages nav tab start here*/
@@ -1216,6 +1238,7 @@ header>.wrapper {
   .pages-dropdown:hover .pages-dropdown-content {
     display: block;
   }
+
   /*hover effect for pages nav tab end here*/
 
   /*hover effect for blog nav tab start here*/
@@ -1232,6 +1255,7 @@ header>.wrapper {
   .blog-dropdown:hover .blog-dropdown-content {
     display: block;
   }
+
   /*hover effect for blog nav tab end here*/
 
   /*hover effect for phone number start here*/
@@ -1239,6 +1263,7 @@ header>.wrapper {
     border-bottom: 1px solid #34D4D6;
     color: #34D4D6;
   }
+
   /*hover effect for phone number end here*/
 
   /*hover effect for apply for loan start here*/
@@ -1246,6 +1271,7 @@ header>.wrapper {
     background-color: #34D4D6;
     color: #FFF;
   }
+
   /*hover effect for apply for loan start here*/
 
   /*hover effect for how it works btn start here*/
@@ -1253,6 +1279,7 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
+
   /*hover effect for how it works btn end here*/
 
   /*hover effect for banner form start here*/
@@ -1270,6 +1297,7 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
+
   /*hover effect for banner form end here*/
 
   /*hover effect for about us btn in choose us start here*/
@@ -1277,6 +1305,7 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
+
   /*hover effect for about us btn in choose us end here*/
 
   /*hover effect for apply btn start here*/
@@ -1284,6 +1313,7 @@ header>.wrapper {
     background-color: #FFF;
     color: #34D4D6;
   }
+
   /*hover effect for apply btn end here*/
 
   /*hover effect for footer start here*/
@@ -1321,5 +1351,137 @@ header>.wrapper {
     color: #098BFD;
     text-decoration: underline;
   }
+
   /*hover effect for footer end here*/
 }
+
+/*media query for 1024px end here*/
+
+/*media query for 767px starts here*/
+@media only screen and (max-width: 767px) {
+
+  /*styling for hamburger start here*/
+  .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    display: block;
+    background-color: #FFF;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger {
+    margin-left: auto;
+    margin-right: 5%;
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    background-color: #098CFF;
+  }
+
+  .nav-list {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-list li {
+    padding-bottom: 15px;
+    border-right: none;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 30px;
+  }
+
+  .nav-list li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .hamburger:hover+nav {
+    display: block;
+  }
+
+  /*styling for hamburger end here*/
+
+  /*styling for banner form start here*/
+  banner-form h4 {
+    margin-top: 40px;
+    font-size: 110%;
+    text-transform: capitalize;
+  }
+
+  .bf-span {
+    padding: 0 25%;
+    margin-top: 30px;
+    color: #98A0AD;
+    font-size: 60px;
+  }
+
+  /*styling for banner form end here*/
+
+  /*styling for why schoose us start here*/
+  .cu-side-div h3 {
+    margin-top: 12%;
+    margin-bottom: 7%;
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+
+  .cu-side-div p {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 15px;
+    color: #98A0AD;
+  }
+
+  .cu-advantage-list {
+    margin: 0;
+  }
+
+  .cu-advantage-list li {
+    display: block;
+    line-height: 112%;
+  }
+
+  .cu-about-us-btn {
+    margin: 3% 0;
+  }
+
+  /*styling for why schoose us end here*/
+
+  /*styling for what we offer start here*/
+  .offer .wrapper h3 {
+    width: 50;
+    padding: 20px 0;
+    border-top: 2px solid #34D4D6;
+    font-size: 270%;
+    text-align: center;
+  }
+
+  /*styling for what we offer end here*/
+
+  /*styling for how it works start here*/
+  .hiw-div h3 {
+    width: 40%;
+    padding: 15px 0;
+    border-top: 2px solid #34D4D6;
+    font-size: 285%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  /*styling for how it works end here*/
+
+}
+
+/*media query for 767px end here*/
