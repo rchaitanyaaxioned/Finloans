@@ -267,9 +267,11 @@ header>.wrapper {
 }
 
 /*styling for hamburger start here*/
-.hamburger,.bar {
+.hamburger,
+.bar {
   display: none;
 }
+
 /*styling for hamburger end here*/
 
 /*styling for nav bar start here*/
@@ -1352,10 +1354,12 @@ header>.wrapper {
 
   /*hover effect for footer end here*/
 }
+
 /*media query for 1024px end here*/
 
 /*media query for 767px starts here*/
 @media only screen and (max-width: 767px) {
+
   /*styling for hamburger start here*/
   .bar {
     width: 25px;
@@ -1376,7 +1380,7 @@ header>.wrapper {
     width: 100%;
     display: none;
     position: absolute;
-    top:90px;
+    top: 90px;
     right: 0px;
     background-color: #098CFF;
   }
@@ -1395,57 +1399,89 @@ header>.wrapper {
     border-bottom: 1px solid #FFF;
     margin-bottom: 30px;
   }
-  
+
   .nav-list li a {
     color: white;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
   }
-  
+
   .hamburger:hover+nav {
     display: block;
   }
+
   /*styling for hamburger end here*/
 
   /*styling for banner form start here*/
-  .banner-form h4 {
+  banner-form h4 {
     margin-top: 40px;
-    font-size: 17px;
+    font-size: 110%;
     text-transform: capitalize;
   }
 
   .bf-span {
-    padding: 0 17%;
+    padding: 0 25%;
     margin-top: 30px;
     color: #98A0AD;
-    font-size: 12px;
+    font-size: 60px;
   }
+
   /*styling for banner form end here*/
 
   /*styling for why schoose us start here*/
   .cu-side-div h3 {
-    margin-top: 24px;
-    margin-bottom: 12px;
+    margin-top: 12%;
+    margin-bottom: 7%;
     font-size: 40px;
     text-transform: capitalize;
   }
 
-.cu-side-div p {
-  width: 100%;
-  font-size: 15px;
-  color: #98A0AD;
+  .cu-side-div p {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 15px;
+    color: #98A0AD;
+  }
+
+  .cu-advantage-list {
+    margin: 0;
+  }
+
+  .cu-advantage-list li {
+    display: block;
+    line-height: 112%;
+  }
+
+  .cu-about-us-btn {
+    margin: 3% 0;
+  }
+
+  /*styling for why schoose us end here*/
+
+  /*styling for what we offer start here*/
+  .offer .wrapper h3 {
+    width: 50;
+    padding: 20px 0;
+    border-top: 2px solid #34D4D6;
+    font-size: 270%;
+    text-align: center;
+  }
+
+  /*styling for what we offer end here*/
+
+  /*styling for how it works start here*/
+  .hiw-div h3 {
+    width: 40%;
+    padding: 15px 0;
+    border-top: 2px solid #34D4D6;
+    font-size: 285%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  /*styling for how it works end here*/
+
 }
 
-.cu-advantage-list {
-  margin: 10px 0;
-}
-
-.cu-advantage-list li {
-  display: block;
-  line-height: 20px;
-}
-/*styling for why schoose us end here*/
-
-}
 /*media query for 767px end here*/
