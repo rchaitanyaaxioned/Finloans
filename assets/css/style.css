@@ -471,6 +471,11 @@ header>.wrapper {
 
 /*styling for banner form section start here*/
 .banner-form {
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+/* .banner-form {
   width: 30%;
   height: 400px;
   display: flex;
@@ -479,25 +484,41 @@ header>.wrapper {
   border-radius: 5px;
   color: #000;
   flex-direction: column;
-}
+} */
 
 .banner-form h4 {
+  margin: 50px 10% 25px 10%;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* .banner-form h4 {
   margin-top: 40px;
   font-size: 25px;
   text-transform: capitalize;
-}
+} */
 
 .bf-span {
-  margin-top: 30px;
+  margin: 25px 10%;
   color: #98A0AD;
   font-size: 15px;
 }
 
+/* .bf-span {
+  margin-top: 30px;
+  color: #98A0AD;
+  font-size: 15px;
+} */
+
 .banner-form form {
+  margin: 24px 13%;
+}
+
+/* .banner-form form {
   width: 75%;
   height: 100%;
   margin: 24px 0;
-}
+} */
 
 .input-amount {
   width: 100%;
@@ -534,10 +555,15 @@ header>.wrapper {
 }
 
 .input-submit {
+  height: 35px;
+  margin: 30px 0;
+}
+
+/* .input-submit {
   width: 100%;
   height: 35px;
   margin-top: 45px;
-}
+} */
 
 .input-submit input {
   width: 100%;
