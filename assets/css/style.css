@@ -488,8 +488,12 @@ header>.wrapper {
 
 .banner-form h4 {
   margin: 50px 10% 25px 10%;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
+}
+
+.banner-form h4::first-letter {
+  text-transform: capitalize;
 }
 
 /* .banner-form h4 {
@@ -809,26 +813,45 @@ header>.wrapper {
 
 .hiw-div {
   padding: 140px 0;
+}
+
+/* .hiw-div {
+  padding: 140px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .hiw-div h3 {
+  padding: 15px 0;
+  border-top: 2px solid #34D4D6;
+  font-size: 45px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* .hiw-div h3 {
   width: 20%;
   padding: 15px 0;
   border-top: 2px solid #34D4D6;
   font-size: 40px;
   text-align: center;
   text-transform: capitalize;
-}
+} */
 
 .hiw-span {
   margin: 10px 0;
   color: #98A0AD;
   font-size: 17px;
+  text-align: center;
 }
+
+/* .hiw-span {
+  margin: 10px 0;
+  color: #98A0AD;
+  font-size: 17px;
+} */
 
 .hiw-list {
   padding: 0 10%;
@@ -1308,25 +1331,67 @@ header>.wrapper {
   }
 
   .bf-span {
-    padding: 0 25%;
+    padding: 0 5%;
     margin-top: 30px;
     color: #98A0AD;
     font-size: 15px;
   }
 
-  .hiw-div h3 {
-    width: 25%;
-    padding: 15px 0;
-    border-top: 2px solid #34D4D6;
-    font-size: 40px;
-    text-align: center;
-    text-transform: capitalize;
+  .loan-rate-list {
+    margin: 25px 6%;
+    color: #FFF;
+    font-size: 15px;
   }
 }
 /*media query for 1210px end here*/
 
+/*media query for 1025px start here*/
+.loan-rate-list {
+  margin: 25px 2%;
+  color: #FFF;
+  font-size: 14px;
+}
+
+.test-side-div p {
+  width: 80%;
+  margin: 30px 10%;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.test-side-div span {
+  margin: 0 10%;
+  color: #98A0AD;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.cu-side-div h3 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.fa-side-div h3 {
+  margin: 55px 0 40px 10%;
+  font-size: 35px;
+}
+
+.clients-list li {
+  margin: 0 1%;
+}
+
+.afl-apply-now-btn a {
+  padding: 10px 10%;
+  background-color: #34D4D6;
+  border: 1px solid #34D4D6;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 15px;
+  text-transform: capitalize;
+}
 /*media query for 1025px end here*/
-/*1025*/
 
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
@@ -1472,333 +1537,379 @@ header>.wrapper {
 }
 /*media query for 1024px end here*/
 
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  /*styling for hamburger start here*/
+    .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      display: block;
+      background-color: #FFF;
+      transition: all 0.3s ease-in-out;
+      text-indent: -9999px;
+    }
+  
+    .hamburger {
+      display: block;
+      position: absolute;
+      right: -2%;
+    }
+  
+    nav {
+      width: 100%;
+      display: none;
+      position: absolute;
+      top: -5px;
+      right: 0px;
+      background-color: #098CFF;
+    }
+  
+    .nav-list {
+      padding: 37px 0 37px 8%;
+      display: flex;
+      position: absolute;
+      left: 85%;
+      align-items: end;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  
+    .nav-list li {
+      margin-bottom: 4px;
+      padding-bottom: 3px;
+      border-right: none;
+      border-bottom: 1px solid #FFF;
+    }
+  
+    .nav-list li a {
+      color: white;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+  
+    .nav-list li a:hover {
+      background-color: #FFF;
+      color: #098CFF;
+    }
+  
+    .pages-dropbtn:hover {
+      background-color: #FFF;
+      color: #098CFF;
+    }
+  
+    .blog-dropbtn:hover {
+      background-color: #FFF;
+      color: #098CFF;
+    }
+  
+    .hamburger:hover+nav {
+      display: block;
+    }
+  
+    .phone-no {
+      display: block;
+      position: absolute;
+      left: 33%;
+      padding: 12px 0;
+    }
+  
+    .apply-for-loan-btn {
+      position: absolute;
+      right: 22%;
+    }
+
+    .loan-card-list {
+    margin: 45px 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .loan-card {
+    width: 40%;
+    padding: 14px;
+    margin: 20px 0;
+    background-image: linear-gradient(#098BFD, #054781);
+    border-radius: 5px;
+  }
+
+  .loan-rate-list li {
+    margin: 5px 18%;
+    display: list-item;
+    list-style-type: disc;
+  }
+
+  .cu-side-div h3 {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+
+  .fa-side-div h3 {
+    margin: 40px 0 40px 10%;
+    font-size: 35px;
+  }
+
+  .afl-apply-now-btn a {
+    padding: 10px 8%;
+    background-color: #34D4D6;
+    border: 1px solid #34D4D6;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+}
+
+/*media query for 995px end here*/
+
 /*media query for 767px starts here*/
 @media only screen and (max-width: 767px) {
 
   /*styling for hamburger start here*/
-  .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    display: block;
-    background-color: #FFF;
-    transition: all 0.3s ease-in-out;
-    text-indent: -9999px;
-  }
-
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: -2%;
-  }
-
-  nav {
-    width: 100%;
-    display: none;
-    position: absolute;
-    top: -5px;
-    right: 0px;
-    background-color: #098CFF;
-  }
-
-  .nav-list {
-    padding: 37px 0 37px 8%;
-    display: flex;
-    position: absolute;
-    left: 85%;
-    align-items: end;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .nav-list li {
-    margin-bottom: 4px;
-    padding-bottom: 3px;
-    border-right: none;
-    border-bottom: 1px solid #FFF;
-  }
-
- .nav-list li a {
-   color: white;
-   font-size: 15px;
-   text-transform: capitalize;
-  }
-
-  .nav-list li a:hover {
-    background-color: #FFF;
-    color: #098CFF;
-  }
-
-  .pages-dropbtn:hover {
-    background-color: #FFF;
-    color: #098CFF;
-  }
-
-   .blog-dropbtn:hover {
-    background-color: #FFF;
-    color: #098CFF;
-  }
-
-  .hamburger:hover+nav {
-    display: block;
-  }
-
-  .phone-no {
-    display: block;
-    position: absolute;
-    left: 33%;
-    padding: 12px 0;
-  }
-
-  .apply-for-loan-btn {
-    position: absolute;
-    right: 22%;
-  }
-  /*styling for hamburger end here*/
-
-  /*styling for banner form start here*/
-  .banner-heading h2 {
-    width: 100%;
-    margin: 50px 0;
-    color: #FFF;
-    font-size: 40px;
-    text-transform: capitalize;
-  } 
-
-  .banner-form {
-    width: 35%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    background-color: #FFF;
-    border-radius: 5px;
-    color: #000;
-    flex-direction: column;
-  }
-
-  .banner-form h4 {
-    margin-top: 30px;
-    font-size: 17px;
-    text-transform: capitalize;
-  }
-
-  .bf-span {
-    padding: 0 14%;
-    margin-top: 31px;
-    color: #98A0AD;
-    font-size: 14px;
-  }
-  /*styling for banner form end here*/
-
-  /*styling for offer section start here*/
-  .offer-content {
-    margin: 85px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .offer .wrapper h3 {
-    width: 50%;
-    padding: 20px 0;
-    border-top: 2px solid #34D4D6;
-    font-size: 35px;
-    text-align: center;
-  }
-  /*styling for offer section start here*/
-
-  /*styling for why choose us start here*/
-  .choose-us {
-    margin: 0;
-  }
-
-  .cu-side-div h3 {
-    margin-top: 8%;
-    margin-bottom: 4%;
-    font-size: 35px;
-    text-transform: capitalize;
-  }
-
-  .cu-side-div p {
-    width: 100%;
-    margin: 10px 0;
-    font-size: 15px;
-    color: #98A0AD;
-  }
-
-  .cu-advantage-list {
-    margin: 15px 0;
-  }
-
-  .cu-advantage-list li {
-    display: block;
-    line-height: 112%;
-  }
-
-  .cu-about-us-btn {
-    margin: 5% 0;
-  }
-  /*styling for why choose us end here*/
-
-  /*styling for how it works start here*/
-  .hiw-div {
-    padding: 95px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hiw-list {
-    padding: 0 10%;
-    margin-top: 35px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .hiw-div h3 {
-    width: 30%;
-    padding: 15px 0;
-    border-top: 2px solid #34D4D6;
-    font-size: 35px;
-    text-align: center;
-    text-transform: capitalize;
-  }
-  /*styling for how it works end here*/
-
-  /*styling for frequently ask start here*/
-  .fa-div {
-    display: flex;
-    margin: 50px 0;
-  }
-
-  .fa-side-div h3 {
-    margin: 30px 0 30px 10%;
-    font-size: 35px;
-  }
-
-  .fa-side-div h4 {
-    margin: 15px 0 15px 12%;
-    font-size: 17px;
-  }
-
-  .fa-side-div p {
-    margin: 15px 17%;
-    color: #98A0AD;
-    font-size: 13px;
-  }
-  /*styling for frequently ask end here*/
-
-  /*styling for testimonial start here*/
-  .test-container {
-    width: 100%;
-    margin: 90px 0 70px 0;
-    display: flex;
-  }
-
-  .test-li-1 {
-    width: 80%;
-    height: 200px;
-    padding-left: 3%;
-    display: flex;
-  }
-
-  .test-side-div p {
-    width: 100%;
-    margin: 0 10%;
-    font-size: 15px;
-    line-height: 23px;
-  }
-
-  .test-side-div div {
-    margin-top: 10px;
-  }
-
-  .test-side-div span {
-    padding: 0 10%;
-    color: #98A0AD;
-    text-transform: capitalize;
-    font-size: 15px;
-  }
-
-  .test-li-2 {
-    width: 20%;
-    height: 200px;
-    padding-right: 5%;
-  }
-  /*styling for testimonial end here*/
-
-  /*styling for clents start here*/
-  .clients-list {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .clients-list li {
-    margin: 0 1%;
-    display: inline-block;
-    list-style-type: none;  
-  }
-  /*styling for clents end here*/
-
-  /*styling for apply for loan start here*/
-  .afl-bg-img {
-    padding: 45px 0;
-    background-image: url(/assets/Images/finloans-afl.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-  }
-
-  .afl-heading {
-    flex-basis: 40%;
-    font-size: 35px;
-    color: #FFF;
-  }
-
-  .afl-apply-now-btn {
-    padding-left: 33%;
-    flex-basis: 17%;
-  }
-  /*styling for apply for loan end here*/
-
-  /*styling for footer start here*/
-  .footer-conrainer {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .ft-finloans {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ft-email {
-    margin-top: 35px;
-  }
-
-  .ft-social-link-list {
-    margin-top: 25px;
-    display: flex;
-  }
-
-  .ft-form-input input {
-    width: 60%;
-    padding: 10px 0 10px 3%;
-    border: none;
-    font-size: 15px;
-  }
-
-  .footer-bottom {
-    margin-top: 55px;
-    margin-bottom: 50px px;
-  }
-  /*styling for footer end here*/
+  .banner>.wrapper {
+      height: 785px;
+      display: flex;
+      z-index: -1;
+      top: 0;
+      align-items: center;
+      background-image: url(/assets/Images/finloans-banner-2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .banner-heading {
+      text-align: center;
+      margin: 30px 25%;
+    }
+  
+    .banner-heading h2 {
+      color: #FFF;
+      font-size: 35px;
+      text-transform: capitalize;
+    }
+  
+    .how-it-works-btn a {
+      margin: 20px 0;
+      padding: 10px 7%;
+      background-color: #34D4D6;
+      border-radius: 5px;
+      color: #FFF;
+      text-transform: capitalize;
+    }
+  
+    .loan-rate-list {
+      margin: 25px -10%;
+      color: #FFF;
+      font-size: 14px;
+    }
+  
+    .cu-div {
+      margin: 0 1%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .cu-side-div h3 {
+      margin-top: 35px;
+      margin-bottom: 40px;
+      font-size: 35px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  
+    .cu-side-div p {
+      margin: 10px 10%;
+      font-size: 15px;
+      color: #98A0AD;
+      text-align: center;
+    }
+  
+    .cu-advantage-list {
+      margin: 30px 0;
+    }
+  
+    .cu-about-us-btn {
+      text-align: center;
+    }
+  
+    .hiw-list {
+      padding: 0 10%;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .hiw-list p {
+      margin: 15px 0;
+      font-size: 15px;
+      color: #98A0AD;
+    }
+  
+    .fa-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .test-container {
+      width: 100%;
+      margin: 125px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .test-li-1 {
+      height: 200px;
+      padding-left: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .clients-list {
+      margin: 0 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .clients-list li {
+      margin: 10px 1%;
+    }
+  
+    .afl-bg-img {
+      padding: 155px 0;
+      margin: 130px 0;
+      background-image: url(/assets/Images/finloans-afl.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .afl-heading {
+      text-align: center;
+      font-size: 30px;
+      color: #FFF;
+    }
+  
+    .afl-apply-now-btn {
+      width: 100%;
+      margin: 20px 0;
+      text-align: center;
+    }
+  
+    .afl-apply-now-btn a {
+      padding: 10px -29%;
+      background-color: #34D4D6;
+      border: 1px solid #34D4D6;
+      border-radius: 5px;
+      color: #FFF;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+  
+    .afl-apply-now-btn a {
+      padding: 10px 2%;
+      background-color: #34D4D6;
+      border: 1px solid #34D4D6;
+      border-radius: 5px;
+      color: #FFF;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+  
+    .footer-conrainer {
+      padding: 0 8%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .ft-finloans {
+      width: 100%;
+      margin: 20px 0;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .ft-social-link-list {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .ft-services {
+      margin: 20px 0;
+    }
+  
+    .ft-services-list {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .ft-useful-links {
+      margin: 20px 0;
+    }
+  
+    .useful-links {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .ft-subscribe {
+      margin: 20px 0;
+    }
+  
+    .ft-subscribe h5 {
+      font-size: 17px;
+      font-weight: bold;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  
+    .ft-subscribe form {
+      margin-top: 30px;
+    }
+  
+    .ft-form-input {
+      width: 54%;
+      display: flex;
+      border: 1px solid #98A0AD;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .footer-bottom {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
 }
+/*media query for 1024px end here*/
