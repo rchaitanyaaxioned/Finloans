@@ -1368,14 +1368,6 @@ header>.wrapper {
     display: block;
     background-color: #FFF;
     transition: all 0.3s ease-in-out;
-<<<<<<< HEAD
-  }
-
-  .hamburger {
-    margin-left: auto;
-    margin-right: 5%;
-    display: block;
-=======
     text-indent: -9999px;
   }
 
@@ -1383,44 +1375,18 @@ header>.wrapper {
     display: block;
     position: absolute;
     right: -2%;
->>>>>>> develop
   }
 
   nav {
     width: 100%;
     display: none;
     position: absolute;
-<<<<<<< HEAD
-    top: 90px;
-=======
     top: -5px;
->>>>>>> develop
     right: 0px;
     background-color: #098CFF;
   }
 
   .nav-list {
-<<<<<<< HEAD
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .nav-list li {
-    padding-bottom: 15px;
-    border-right: none;
-    border-bottom: 1px solid #FFF;
-    margin-bottom: 30px;
-  }
-
-  .nav-list li a {
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-=======
     padding: 37px 0 37px 8%;
     display: flex;
     position: absolute;
@@ -1457,32 +1423,12 @@ header>.wrapper {
    .blog-dropbtn:hover {
     background-color: #FFF;
     color: #098CFF;
->>>>>>> develop
   }
 
   .hamburger:hover+nav {
     display: block;
   }
 
-<<<<<<< HEAD
-  /*styling for hamburger end here*/
-
-  /*styling for banner form start here*/
-  banner-form h4 {
-    margin-top: 40px;
-    font-size: 110%;
-    text-transform: capitalize;
-  }
-
-  .bf-span {
-    padding: 0 25%;
-    margin-top: 30px;
-    color: #98A0AD;
-    font-size: 60px;
-  }
-
-  /*styling for banner form end here*/
-=======
   .phone-no {
     display: block;
     position: absolute;
@@ -1531,7 +1477,6 @@ header>.wrapper {
 }
   /**/
 
->>>>>>> develop
 
   /*styling for why schoose us start here*/
   .cu-side-div h3 {
