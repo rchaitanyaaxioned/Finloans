@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -182,6 +189,7 @@ sub {
 
 /*for all*/
 body {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -218,6 +226,8 @@ li {
 }
 
 .transition {
+  -webkit-transition: 1s all ease;
+  -o-transition: 1s all ease;
   transition: 1s all ease;
 }
 
@@ -249,8 +259,12 @@ header {
 }
 
 header>.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -276,6 +290,8 @@ header>.wrapper {
 
 /*styling for nav bar start here*/
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   left: 30%;
@@ -428,14 +444,20 @@ header>.wrapper {
 =================================*/
 .banner>.wrapper {
   height: 785px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   z-index: -1;
   top: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-image: url("/assets/Images/finloans-banner-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -447,7 +469,12 @@ header>.wrapper {
 .banner-heading {
   width: 40%;
   margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -471,32 +498,29 @@ header>.wrapper {
 
 /*styling for banner form section start here*/
 .banner-form {
-  width: 30%;
-  height: 400px;
-  display: flex;
-  align-items: center;
   background-color: #FFF;
   border-radius: 5px;
-  color: #000;
-  flex-direction: column;
 }
 
+
 .banner-form h4 {
-  margin-top: 40px;
-  font-size: 25px;
+  margin: 50px 10% 25px 10%;
+  font-size: 22px;
+  text-align: center;
+}
+
+.banner-form h4::first-letter {
   text-transform: capitalize;
 }
 
 .bf-span {
-  margin-top: 30px;
+  margin: 25px 10%;
   color: #98A0AD;
   font-size: 15px;
 }
 
 .banner-form form {
-  width: 75%;
-  height: 100%;
-  margin: 24px 0;
+  margin: 24px 13%;
 }
 
 .input-amount {
@@ -534,9 +558,8 @@ header>.wrapper {
 }
 
 .input-submit {
-  width: 100%;
   height: 35px;
-  margin-top: 45px;
+  margin: 30px 0;
 }
 
 .input-submit input {
@@ -554,14 +577,9 @@ header>.wrapper {
 /*styling for offer section start here*/
 .offer-content {
   margin: 140px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .offer .wrapper h3 {
-  width: 40%;
   padding: 20px 0;
   border-top: 2px solid #34D4D6;
   font-size: 45px;
@@ -576,48 +594,55 @@ header>.wrapper {
   margin: 15px 0;
   color: #98A0AD;
   font-size: 17px;
+  text-align: center;
 }
 
 .loan-card-list {
-  margin: 60px 10%;
+  margin: 45px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 30%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .loan-card {
-  width: 50%;
-  height: 480px;
-  margin: 0 1%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  width: 25%;
+  padding: 14px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#098BFD), to(#054781));
+  background-image: -o-linear-gradient(#098BFD, #054781);
   background-image: linear-gradient(#098BFD, #054781);
   border-radius: 5px;
 }
 
 .loan-card figure {
-  width: 70PX;
-  height: 70PX;
-  margin: 35px 0;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.loan-card figure img {
+  width: auto;
 }
 
 .loan-card h4 {
   color: #FFF;
   font-size: 15px;
+  text-align: center;
   text-transform: capitalize;
 }
 
 .loan-card-span {
-  margin: 20px 0;
-}
-
-.loan-card-span span {
+  margin: 20px 0 60px 0;
+  text-align: center;
   color: #34D4D6;
   font-size: 25px;
 }
 
 .loan-rate-list {
-  margin: 10px 12%;
+  margin: 25px 12%;
   color: #FFF;
   font-size: 15px;
 }
@@ -629,8 +654,7 @@ header>.wrapper {
 }
 
 .offer-apply-now-btn {
-  width: 100%;
-  margin-top: 15px;
+  margin: 35px 0;
   text-align: center;
 }
 
@@ -653,6 +677,8 @@ header>.wrapper {
 
 .cu-div {
   margin: 0 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -722,17 +748,12 @@ header>.wrapper {
 
 .hiw-div {
   padding: 140px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hiw-div h3 {
-  width: 20%;
   padding: 15px 0;
   border-top: 2px solid #34D4D6;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -741,12 +762,17 @@ header>.wrapper {
   margin: 10px 0;
   color: #98A0AD;
   font-size: 17px;
+  text-align: center;
 }
 
 .hiw-list {
   padding: 0 10%;
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -780,6 +806,8 @@ header>.wrapper {
 
 /*styling for frequently ask section start here*/
 .fa-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -835,6 +863,8 @@ header>.wrapper {
 .test-container {
   width: 100%;
   margin: 125px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -842,6 +872,8 @@ header>.wrapper {
   width: 80%;
   height: 200px;
   padding-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -910,7 +942,11 @@ header>.wrapper {
 /*styling for clients section start here*/
 .clients-list {
   margin: 0 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -928,12 +964,19 @@ header>.wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .afl-heading {
+  -ms-flex-preferred-size: 40%;
   flex-basis: 40%;
   font-size: 30px;
   color: #FFF;
@@ -945,6 +988,7 @@ header>.wrapper {
 
 .afl-apply-now-btn {
   padding-left: 33%;
+  -ms-flex-preferred-size: 10%;
   flex-basis: 10%;
 }
 
@@ -969,14 +1013,23 @@ header>.wrapper {
 /*styling for footer-top start here*/
 .footer-conrainer {
   padding: 0 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 /*styling for footer fit loan section start here*/
 .ft-finloans {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1014,6 +1067,8 @@ header>.wrapper {
 
 .ft-social-link-list {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1084,7 +1139,12 @@ header>.wrapper {
 
 .ft-services-list {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1113,7 +1173,12 @@ header>.wrapper {
 
 .useful-links {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1146,6 +1211,8 @@ header>.wrapper {
 
 .ft-form-input {
   width: 84%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid #98A0AD;
   border-radius: 5px;
@@ -1212,6 +1279,81 @@ header>.wrapper {
 =================================*/
 
 /*media query starts*/
+/*media query for 1210px start here*/
+@media only screen and (max-width: 1210px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 23%;
+  }
+
+  .bf-span {
+    padding: 0 5%;
+    margin-top: 30px;
+    color: #98A0AD;
+    font-size: 15px;
+  }
+
+  .loan-rate-list {
+    margin: 25px 6%;
+    color: #FFF;
+    font-size: 15px;
+  }
+}
+
+/*media query for 1210px end here*/
+
+/*media query for 1025px start here*/
+.loan-rate-list {
+  margin: 25px 2%;
+  color: #FFF;
+  font-size: 14px;
+}
+
+.test-side-div p {
+  width: 80%;
+  margin: 30px 10%;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.test-side-div span {
+  margin: 0 10%;
+  color: #98A0AD;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.cu-side-div h3 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.fa-side-div h3 {
+  margin: 55px 0 40px 10%;
+  font-size: 35px;
+}
+
+.clients-list li {
+  margin: 0 1%;
+}
+
+.afl-apply-now-btn a {
+  padding: 10px 10%;
+  background-color: #34D4D6;
+  border: 1px solid #34D4D6;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+/*media query for 1025px end here*/
+
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
 
@@ -1357,8 +1499,8 @@ header>.wrapper {
 
 /*media query for 1024px end here*/
 
-/*media query for 767px starts here*/
-@media only screen and (max-width: 767px) {
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
 
   /*styling for hamburger start here*/
   .bar {
@@ -1367,6 +1509,8 @@ header>.wrapper {
     margin: 5px auto;
     display: block;
     background-color: #FFF;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     text-indent: -9999px;
   }
@@ -1388,11 +1532,19 @@ header>.wrapper {
 
   .nav-list {
     padding: 37px 0 37px 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     left: 85%;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
@@ -1403,10 +1555,10 @@ header>.wrapper {
     border-bottom: 1px solid #FFF;
   }
 
- .nav-list li a {
-   color: white;
-   font-size: 15px;
-   text-transform: capitalize;
+  .nav-list li a {
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
   }
 
   .nav-list li a:hover {
@@ -1419,7 +1571,7 @@ header>.wrapper {
     color: #098CFF;
   }
 
-   .blog-dropbtn:hover {
+  .blog-dropbtn:hover {
     background-color: #FFF;
     color: #098CFF;
   }
@@ -1439,251 +1591,421 @@ header>.wrapper {
     position: absolute;
     right: 22%;
   }
-  /*styling for hamburger end here*/
 
-  /*styling for banner form start here*/
-  .banner-heading h2 {
-    width: 100%;
-    margin: 50px 0;
-    color: #FFF;
-    font-size: 40px;
-    text-transform: capitalize;
-  } 
-
-  .banner-form {
-    width: 35%;
-    height: 400px;
+  .loan-card-list {
+    margin: 45px 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    background-color: #FFF;
-    border-radius: 5px;
-    color: #000;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .banner-form h4 {
-    margin-top: 30px;
-    font-size: 17px;
-    text-transform: capitalize;
-  }
-
-  .bf-span {
-    padding: 0 14%;
-    margin-top: 31px;
-    color: #98A0AD;
-    font-size: 14px;
-  }
-  /*styling for banner form end here*/
-
-  /*styling for offer section start here*/
-  .offer-content {
-    margin: 85px 0;
-    display: flex;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
-  .offer .wrapper h3 {
-    width: 50%;
-    padding: 20px 0;
-    border-top: 2px solid #34D4D6;
-    font-size: 35px;
-    text-align: center;
+  .loan-card {
+    width: 40%;
+    padding: 14px;
+    margin: 20px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#098BFD), to(#054781));
+    background-image: -o-linear-gradient(#098BFD, #054781);
+    background-image: linear-gradient(#098BFD, #054781);
+    border-radius: 5px;
   }
-  /*styling for offer section start here*/
 
-  /*styling for why choose us start here*/
-  .choose-us {
-    margin: 0;
+  .loan-rate-list li {
+    margin: 5px 18%;
+    display: list-item;
+    list-style-type: disc;
   }
 
   .cu-side-div h3 {
-    margin-top: 8%;
-    margin-bottom: 4%;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+
+  .fa-side-div h3 {
+    margin: 40px 0 40px 10%;
     font-size: 35px;
+  }
+
+  .afl-apply-now-btn a {
+    padding: 10px 8%;
+    background-color: #34D4D6;
+    border: 1px solid #34D4D6;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+}
+
+/*media query for 995px end here*/
+
+/*media query for 767px starts here*/
+@media only screen and (max-width: 767px) {
+
+  /*styling for hamburger start here*/
+  .banner>.wrapper {
+    height: 785px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: -1;
+    top: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(/assets/Images/finloans-banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .banner-heading {
+    text-align: center;
+    margin: 30px 25%;
+  }
+
+  .banner-heading h2 {
+    color: #FFF;
+    font-size: 35px;
+    text-transform: capitalize;
+  }
+
+  .how-it-works-btn a {
+    margin: 20px 0;
+    padding: 10px 7%;
+    background-color: #34D4D6;
+    border-radius: 5px;
+    color: #FFF;
+    text-transform: capitalize;
+  }
+
+  .loan-rate-list {
+    margin: 25px -10%;
+    color: #FFF;
+    font-size: 14px;
+  }
+
+  .cu-div {
+    margin: 0 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .cu-side-div h3 {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
     text-transform: capitalize;
   }
 
   .cu-side-div p {
-    width: 100%;
-    margin: 10px 0;
+    margin: 10px 10%;
     font-size: 15px;
     color: #98A0AD;
+    text-align: center;
   }
 
   .cu-advantage-list {
-    margin: 15px 0;
-  }
-
-  .cu-advantage-list li {
-    display: block;
-    line-height: 112%;
+    margin: 30px 0;
   }
 
   .cu-about-us-btn {
-    margin: 5% 0;
-  }
-  /*styling for why choose us end here*/
-
-  /*styling for how it works start here*/
-  .hiw-div {
-    padding: 95px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 
   .hiw-list {
     padding: 0 10%;
-    margin-top: 35px;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
-  .hiw-div h3 {
-    width: 30%;
-    padding: 15px 0;
-    border-top: 2px solid #34D4D6;
-    font-size: 35px;
-    text-align: center;
-    text-transform: capitalize;
-  }
-  /*styling for how it works end here*/
-
-  /*styling for frequently ask start here*/
-  .fa-div {
-    display: flex;
-    margin: 50px 0;
-  }
-
-  .fa-side-div h3 {
-    margin: 30px 0 30px 10%;
-    font-size: 35px;
-  }
-
-  .fa-side-div h4 {
-    margin: 15px 0 15px 12%;
-    font-size: 17px;
-  }
-
-  .fa-side-div p {
-    margin: 15px 17%;
+  .hiw-list p {
+    margin: 15px 0;
+    font-size: 15px;
     color: #98A0AD;
-    font-size: 13px;
   }
-  /*styling for frequently ask end here*/
 
-  /*styling for testimonial start here*/
+  .fa-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .test-container {
     width: 100%;
-    margin: 90px 0 70px 0;
+    margin: 125px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .test-li-1 {
-    width: 80%;
     height: 200px;
-    padding-left: 3%;
+    padding-left: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
-  .test-side-div p {
-    width: 100%;
-    margin: 0 10%;
-    font-size: 15px;
-    line-height: 23px;
-  }
-
-  .test-side-div div {
-    margin-top: 10px;
-  }
-
-  .test-side-div span {
-    padding: 0 10%;
-    color: #98A0AD;
-    text-transform: capitalize;
-    font-size: 15px;
-  }
-
-  .test-li-2 {
-    width: 20%;
-    height: 200px;
-    padding-right: 5%;
-  }
-  /*styling for testimonial end here*/
-
-  /*styling for clents start here*/
   .clients-list {
-    margin: 0;
+    margin: 0 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .clients-list li {
-    margin: 0 1%;
-    display: inline-block;
-    list-style-type: none;  
+    margin: 10px 1%;
   }
-  /*styling for clents end here*/
 
-  /*styling for apply for loan start here*/
   .afl-bg-img {
-    padding: 45px 0;
+    padding: 155px 0;
+    margin: 130px 0;
     background-image: url(/assets/Images/finloans-afl.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
   .afl-heading {
-    flex-basis: 40%;
-    font-size: 35px;
+    text-align: center;
+    font-size: 30px;
     color: #FFF;
   }
 
   .afl-apply-now-btn {
-    padding-left: 33%;
-    flex-basis: 17%;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
   }
-  /*styling for apply for loan end here*/
 
-  /*styling for footer start here*/
+  .afl-apply-now-btn a {
+    padding: 10px 29%;
+    background-color: #34D4D6;
+    border: 1px solid #34D4D6;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+
+  .afl-apply-now-btn a {
+    padding: 10px 2%;
+    background-color: #34D4D6;
+    border: 1px solid #34D4D6;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+
   .footer-conrainer {
-    padding: 0;
+    padding: 0 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .ft-finloans {
-    width: 35%;
+    width: 100%;
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .ft-email {
-    margin-top: 35px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .ft-social-link-list {
-    margin-top: 25px;
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
-  .ft-form-input input {
-    width: 60%;
-    padding: 10px 0 10px 3%;
-    border: none;
-    font-size: 15px;
+  .ft-services {
+    margin: 20px 0;
+  }
+
+  .ft-services-list {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .ft-useful-links {
+    margin: 20px 0;
+  }
+
+  .useful-links {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .ft-subscribe {
+    margin: 20px 0;
+  }
+
+  .ft-subscribe h5 {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .ft-subscribe form {
+    margin-top: 30px;
+  }
+
+  .ft-form-input {
+    width: 54%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #98A0AD;
+    border-radius: 5px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .footer-bottom {
-    margin-top: 55px;
-    margin-bottom: 50px px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
-  /*styling for footer end here*/
 }
+
+/*media query for 1024px end here*/
