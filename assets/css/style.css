@@ -1401,8 +1401,7 @@ header>.wrapper {
     padding-bottom: 3px;
     border-right: none;
     border-bottom: 1px solid #FFF;
-    background-color: #000;
- }
+  }
 
  .nav-list li a {
    color: white;
@@ -1440,49 +1439,69 @@ header>.wrapper {
     position: absolute;
     right: 22%;
   }
-
   /*styling for hamburger end here*/
 
   /*styling for banner form start here*/
+  .banner-heading h2 {
+    width: 100%;
+    margin: 50px 0;
+    color: #FFF;
+    font-size: 40px;
+    text-transform: capitalize;
+  } 
+
+  .banner-form {
+    width: 35%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 5px;
+    color: #000;
+    flex-direction: column;
+  }
+
   .banner-form h4 {
     margin-top: 30px;
     font-size: 17px;
     text-transform: capitalize;
- }
+  }
 
- .bf-span {
-   padding: 0 14%;
-   margin-top: 31px;
-   color: #98A0AD;
-   font-size: 14px;
- }
+  .bf-span {
+    padding: 0 14%;
+    margin-top: 31px;
+    color: #98A0AD;
+    font-size: 14px;
+  }
   /*styling for banner form end here*/
 
-  /**/
+  /*styling for offer section start here*/
+  .offer-content {
+    margin: 85px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.offer-content {
-  margin: 115px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .offer .wrapper h3 {
+    width: 50%;
+    padding: 20px 0;
+    border-top: 2px solid #34D4D6;
+    font-size: 35px;
+    text-align: center;
+  }
+  /*styling for offer section start here*/
 
-.offer .wrapper h3 {
-  width: 50;
-  padding: 20px 0;
-  border-top: 2px solid #34D4D6;
-  font-size: 28px;
-  text-align: center;
-}
-  /**/
+  /*styling for why choose us start here*/
+  .choose-us {
+    margin: 0;
+  }
 
-
-  /*styling for why schoose us start here*/
   .cu-side-div h3 {
-    margin-top: 12%;
-    margin-bottom: 7%;
-    font-size: 40px;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    font-size: 35px;
     text-transform: capitalize;
   }
 
@@ -1494,7 +1513,7 @@ header>.wrapper {
   }
 
   .cu-advantage-list {
-    margin: 0;
+    margin: 15px 0;
   }
 
   .cu-advantage-list li {
@@ -1503,34 +1522,168 @@ header>.wrapper {
   }
 
   .cu-about-us-btn {
-    margin: 3% 0;
+    margin: 5% 0;
   }
-
-  /*styling for why schoose us end here*/
-
-  /*styling for what we offer start here*/
-  .offer .wrapper h3 {
-    width: 50;
-    padding: 20px 0;
-    border-top: 2px solid #34D4D6;
-    font-size: 270%;
-    text-align: center;
-  }
-
-  /*styling for what we offer end here*/
+  /*styling for why choose us end here*/
 
   /*styling for how it works start here*/
+  .hiw-div {
+    padding: 95px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hiw-list {
+    padding: 0 10%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .hiw-div h3 {
-    width: 40%;
+    width: 30%;
     padding: 15px 0;
     border-top: 2px solid #34D4D6;
-    font-size: 285%;
+    font-size: 35px;
     text-align: center;
     text-transform: capitalize;
   }
-
   /*styling for how it works end here*/
 
-}
+  /*styling for frequently ask start here*/
+  .fa-div {
+    display: flex;
+    margin: 50px 0;
+  }
 
-/*media query for 767px end here*/
+  .fa-side-div h3 {
+    margin: 30px 0 30px 10%;
+    font-size: 35px;
+  }
+
+  .fa-side-div h4 {
+    margin: 15px 0 15px 12%;
+    font-size: 17px;
+  }
+
+  .fa-side-div p {
+    margin: 15px 17%;
+    color: #98A0AD;
+    font-size: 13px;
+  }
+  /*styling for frequently ask end here*/
+
+  /*styling for testimonial start here*/
+  .test-container {
+    width: 100%;
+    margin: 90px 0 70px 0;
+    display: flex;
+  }
+
+  .test-li-1 {
+    width: 80%;
+    height: 200px;
+    padding-left: 3%;
+    display: flex;
+  }
+
+  .test-side-div p {
+    width: 100%;
+    margin: 0 10%;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .test-side-div div {
+    margin-top: 10px;
+  }
+
+  .test-side-div span {
+    padding: 0 10%;
+    color: #98A0AD;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+
+  .test-li-2 {
+    width: 20%;
+    height: 200px;
+    padding-right: 5%;
+  }
+  /*styling for testimonial end here*/
+
+  /*styling for clents start here*/
+  .clients-list {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .clients-list li {
+    margin: 0 1%;
+    display: inline-block;
+    list-style-type: none;  
+  }
+  /*styling for clents end here*/
+
+  /*styling for apply for loan start here*/
+  .afl-bg-img {
+    padding: 45px 0;
+    background-image: url(/assets/Images/finloans-afl.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .afl-heading {
+    flex-basis: 40%;
+    font-size: 35px;
+    color: #FFF;
+  }
+
+  .afl-apply-now-btn {
+    padding-left: 33%;
+    flex-basis: 17%;
+  }
+  /*styling for apply for loan end here*/
+
+  /*styling for footer start here*/
+  .footer-conrainer {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ft-finloans {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ft-email {
+    margin-top: 35px;
+  }
+
+  .ft-social-link-list {
+    margin-top: 25px;
+    display: flex;
+  }
+
+  .ft-form-input input {
+    width: 60%;
+    padding: 10px 0 10px 3%;
+    border: none;
+    font-size: 15px;
+  }
+
+  .footer-bottom {
+    margin-top: 55px;
+    margin-bottom: 50px px;
+  }
+  /*styling for footer end here*/
+}
